@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 <style>
 html,body{
-margin:0;
-width:100%;
-height:100%;
-overflow:hidden;
-background:white;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#000;
 }
 
 video{
-position:fixed;
-inset:0;
-width:100vw;
-height:100vh;
-object-fit:cover;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 </style>
 </head>
 
 <body>
-<video autoplay controls playsinline>
-<source src="video.mov" type="video/quicktime">
+
+<video autoplay muted loop playsinline>
+    <source src="video.mov" type="video/quicktime">
 </video>
+
 </body>
 </html>
